@@ -7,6 +7,10 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 
+app.get("/", (req,res)=>{
+    res.send("upload api in render ")
+})
+
 app.get('/get/allStudents',async (req,res)=>{
     let findings=await getallData();
     res.send(findings)
