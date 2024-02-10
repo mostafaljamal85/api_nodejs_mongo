@@ -18,7 +18,7 @@ async function connectDB(ur){
 }
 export async function getallData(){
     try {
-        let mongoC=await connectDB(url);
+        let mongoC=await connectDB(url_atlas);
         const db=mongoC.db("university");
         const student_collection=db.collection("teachers")
         let result=await student_collection.find({}).toArray();
