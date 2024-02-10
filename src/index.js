@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req,res)=>{
-    res.send("upload api in render ")
+    res.send("upload api in render.com  ")
 })
 
 app.get('/get/allStudents',async (req,res)=>{
